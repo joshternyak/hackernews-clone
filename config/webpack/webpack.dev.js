@@ -3,10 +3,19 @@ const common = require('./webpack.common.js')
 const path = require('path')
 
 module.exports = merge(common, {
-   devtool: 'inline-source-map',
-   mode: 'development',
-   devServer: {
+  devtool: 'inline-source-map',
+  mode: 'development',
+  devServer: {
     contentBase: path.join(process.cwd(), 'dist'),
     hot: true,
+  },
+})
+
+const TerserPlugin = require('terser-webpack-plugin')
+
+new TerserPlugin({
+  parallel: true,
+  terserOptions: {
+    ecma: 6,
   },
 })
