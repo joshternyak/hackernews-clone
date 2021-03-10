@@ -10,12 +10,3 @@ module.exports = merge(common, {
     hot: true,
   },
 })
-
-const TerserPlugin = require('terser-webpack-plugin')
-
-new TerserPlugin({
-  parallel: true,
-  terserOptions: {
-    ecma: 6,
-  },
-})
