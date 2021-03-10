@@ -1,0 +1,10 @@
+.PostMetaInfo {
+  font-size: 0.9rem;
+  color: hsl(0, 0, 33);
+  font-weight: 400;
+
+  &__link {
+    color: black;
+    font-weight: 500;
+  }
+}
