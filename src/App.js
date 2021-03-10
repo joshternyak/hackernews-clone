@@ -1,10 +1,11 @@
 import React from 'react'
 import './App.scss'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
-import Nav from './Nav'
-import Posts from './Posts'
-import Post from './Post'
-import User from './User'
+import Nav from './components/Nav'
+import Posts from './components/Posts'
+import Post from './components/Post'
+import User from './components/User'
+import Loading from './components/Loading'
 
 function App() {
   return (
@@ -12,13 +13,15 @@ function App() {
       <div className="App">
         <div className="App__inner">
           <Nav />
-
-          <Switch>
-            <Route exact path="/" render={() => <Posts />} />
-            <Route exact path="/new" render={() => <Posts />} />
-            <Route exact path="/post" component={Post} />
-            <Route exact path="/user" component={User} />
-          </Switch>
+          <React.Suspense fallback={<Loading />}>
+            <Switch>
+              <Route exact path="/" render={() => <Posts type="top" />} />
+              <Route path="/new" render={() => <Posts type="new" />} />
+              <Route path="/post" component={Post} />
+              <Route path="/user" component={User} />
+              <Route render={() => <h1>Uh oh, 404...</h1>} />
+            </Switch>
+          </React.Suspense>
         </div>
       </div>
     </Router>
