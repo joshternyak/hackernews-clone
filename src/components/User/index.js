@@ -73,5 +73,5 @@ function User({ location: { search } }) {
 export default User
 
 User.propTypes = {
-  location: PropTypes.string.isRequired,
+  location: PropTypes.object.isRequired,
 }

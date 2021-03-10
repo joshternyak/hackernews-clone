@@ -11,7 +11,7 @@ function PostMetaInfo({ author, date, id, descendants }) {
       <Link to={`/user?id=${author}`} className="PostMetaInfo__link">
         {author}
       </Link>{' '}
-      on {formatDate(date)} with{' '}
+      on {formatDate(date)}{' '}
       {typeof descendants === 'number' && (
         <span>
           with{' '}
@@ -26,8 +26,8 @@ function PostMetaInfo({ author, date, id, descendants }) {
 }
 
 PostMetaInfo.propTypes = {
-  author: PropTypes.string.isRequired,
-  date: PropTypes.number.isRequired,
+  author: PropTypes.string,
+  date: PropTypes.number,
   id: PropTypes.number.isRequired,
   descendants: PropTypes.number,
 }

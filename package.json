@@ -22,6 +22,7 @@
     }
   },
   "dependencies": {
+    "gulp-uglify-es": "^2.0.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.14.1",
     "react": "^16.8.6",

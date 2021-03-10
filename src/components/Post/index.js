@@ -74,5 +74,5 @@ function Post({ location: { search } }) {
 export default Post
 
 Post.propTypes = {
-  location: PropTypes.string.isRequired,
+  location: PropTypes.object.isRequired,
 }

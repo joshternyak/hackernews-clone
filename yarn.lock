@@ -1409,6 +1409,13 @@ amdefine@>=0.0.4:
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
 
+ansi-colors@^1.0.1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-1.1.0.tgz#6374b4dd5d4718ff3ce27a671a3b1cad077132a9"
+  integrity sha512-SFKX67auSNoVR38N3L+nvsPjOE0bybKTYbkf5tRvushrAPQ9V75huw0ZxBkKVeRU9kqH3d6HA4xTckbwZ4ixmA==
+  dependencies:
+    ansi-wrap "^0.1.0"
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
@@ -1475,6 +1482,11 @@ ansi-styles@^4.1.0:
   dependencies:
     "@types/color-name" "^1.1.1"
     color-convert "^2.0.1"
+
+ansi-wrap@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/ansi-wrap/-/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
+  integrity sha1-qCJQ3bABXponyoLoLqYDu/pF768=
 
 any-observable@^0.3.0:
   version "0.3.0"
@@ -2270,6 +2282,11 @@ cliui@^4.0.0:
     strip-ansi "^4.0.0"
     wrap-ansi "^2.0.0"
 
+clone-buffer@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/clone-buffer/-/clone-buffer-1.0.0.tgz#e3e25b207ac4e701af721e2cb5a16792cac3dc58"
+  integrity sha1-4+JbIHrE5wGvch4staFnksrD3Fg=
+
 clone-deep@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/clone-deep/-/clone-deep-4.0.1.tgz#c19fd9bdbbf85942b4fd979c84dcf7d5f07c2387"
@@ -2278,6 +2295,25 @@ clone-deep@^4.0.1:
     is-plain-object "^2.0.4"
     kind-of "^6.0.2"
     shallow-clone "^3.0.0"
+
+clone-stats@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/clone-stats/-/clone-stats-1.0.0.tgz#b3782dff8bb5474e18b9b6bf0fdfe782f8777680"
+  integrity sha1-s3gt/4u1R04Yuba/D9/ngvh3doA=
+
+clone@^2.1.1:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
+  integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
+
+cloneable-readable@^1.0.0:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/cloneable-readable/-/cloneable-readable-1.1.3.tgz#120a00cb053bfb63a222e709f9683ea2e11d8cec"
+  integrity sha512-2EF8zTQOxYq70Y4XKtorQupqF0m49MBz2/yf5Bj+MHjvpG3Hy7sImifnqD6UA+TKYxeSV+u6qqQPawN5UvnpKQ==
+  dependencies:
+    inherits "^2.0.1"
+    process-nextick-args "^2.0.0"
+    readable-stream "^2.3.5"
 
 co@^4.6.0:
   version "4.6.0"
@@ -4202,6 +4238,17 @@ growly@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
   integrity sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=
+
+gulp-uglify-es@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-uglify-es/-/gulp-uglify-es-2.0.0.tgz#0a48d9f352393397e78cf2be44bf0fb66a353031"
+  integrity sha512-00KkawzjWdjPo1YfD1FXKijVxZkyr6YSwJ2cJQgD1fNKFZCFPNjGc5sTyzyW8tZns8FmZafgHMrg7LUDNvIQ5A==
+  dependencies:
+    o-stream "^0.2.2"
+    plugin-error "^1.0.1"
+    terser "^4.3.9"
+    vinyl "^2.2.0"
+    vinyl-sourcemaps-apply "^0.2.1"
 
 handle-thing@^2.0.0:
   version "2.0.0"
@@ -6521,6 +6568,11 @@ nwsapi@^2.0.7:
   resolved "https://registry.yarnpkg.com/nwsapi/-/nwsapi-2.1.4.tgz#e006a878db23636f8e8a67d33ca0e4edf61a842f"
   integrity sha512-iGfd9Y6SFdTNldEy2L0GUhcarIutFmk+MPWIn9dmj8NMIup03G08uUF2KGbbmv/Ux4RT0VZJoP/sVbWA6d/VIw==
 
+o-stream@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/o-stream/-/o-stream-0.2.2.tgz#7fe03af870b8f9537af33b312b381b3034ab410f"
+  integrity sha512-V3j76KU3g/Gyl8rpdi2z72rn5zguMvTCQgAXfBe3pxEefKqXmOUOD7mvx/mNjykdxGqDVfpSoo8r+WdrkWg/1Q==
+
 oauth-sign@~0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.9.0.tgz#47a7b016baa68b5fa0ecf3dee08a85c679ac6455"
@@ -7081,6 +7133,16 @@ please-upgrade-node@^3.0.2, please-upgrade-node@^3.2.0:
   dependencies:
     semver-compare "^1.0.0"
 
+plugin-error@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/plugin-error/-/plugin-error-1.0.1.tgz#77016bd8919d0ac377fdcdd0322328953ca5781c"
+  integrity sha512-L1zP0dk7vGweZME2i+EeakvUNqSrdiI3F91TwEoYiGrAfUXmVv6fJIq4g82PAXxNsWOp0J7ZqQy/3Szz0ajTxA==
+  dependencies:
+    ansi-colors "^1.0.1"
+    arr-diff "^4.0.0"
+    arr-union "^3.1.0"
+    extend-shallow "^3.0.2"
+
 pn@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
@@ -7472,6 +7534,11 @@ private@^0.1.6:
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
   integrity sha512-VvivMrbvd2nKkiG38qjULzlc+4Vx4wm/whI9pQD35YrARNnhxeiRktSOhSukRLFNlzg6Br/cJPet5J/u19r/mg==
 
+process-nextick-args@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
+  integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
+
 process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
@@ -7802,6 +7869,19 @@ read-pkg@^3.0.0:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
+readable-stream@^2.3.5:
+  version "2.3.7"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.7.tgz#1eca1cf711aef814c04f62252a36a62f6cb23b57"
+  integrity sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.3"
+    isarray "~1.0.0"
+    process-nextick-args "~2.0.0"
+    safe-buffer "~5.1.1"
+    string_decoder "~1.1.1"
+    util-deprecate "~1.0.1"
+
 readable-stream@^3.0.6, readable-stream@^3.1.1:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.4.0.tgz#a51c26754658e0a3c21dbf59163bd45ba6f447fc"
@@ -7951,6 +8031,11 @@ repeating@^2.0.0:
   integrity sha1-UhTFOpJtNVJwdSf7q0FdvAjQbdo=
   dependencies:
     is-finite "^1.0.0"
+
+replace-ext@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.1.tgz#2d6d996d04a15855d967443631dd5f77825b016a"
+  integrity sha512-yD5BHCe7quCgBph4rMQ+0KkIRKwWCrHDOX1p1Gp6HwjPM5kVoCdKGNhN7ydqqsX6lJEnQDKZ/tFMiEdQ1dvPEw==
 
 request-promise-core@1.1.2:
   version "1.1.2"
@@ -8552,7 +8637,7 @@ source-map-support@^0.5.6, source-map-support@^0.5.9, source-map-support@~0.5.10
     buffer-from "^1.0.0"
     source-map "^0.6.0"
 
-source-map-support@~0.5.19:
+source-map-support@~0.5.12, source-map-support@~0.5.19:
   version "0.5.19"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
   integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==
@@ -8572,7 +8657,7 @@ source-map@^0.4.2:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6:
+source-map@^0.5.0, source-map@^0.5.1, source-map@^0.5.3, source-map@^0.5.6:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
@@ -9040,6 +9125,15 @@ terser@^4.0.0:
     source-map "~0.6.1"
     source-map-support "~0.5.10"
 
+terser@^4.3.9:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-4.8.0.tgz#63056343d7c70bb29f3af665865a46fe03a0df17"
+  integrity sha512-EAPipTNeWsb/3wLPeup1tVPaXfIaU68xMnVdPafIL1TV05OhASArYyIfFvnvJCNrR2NIOvDVNNTFRa+Re2MWyw==
+  dependencies:
+    commander "^2.20.0"
+    source-map "~0.6.1"
+    source-map-support "~0.5.12"
+
 terser@^5.5.1:
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/terser/-/terser-5.6.0.tgz#138cdf21c5e3100b1b3ddfddf720962f88badcd2"
@@ -9496,6 +9590,25 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+vinyl-sourcemaps-apply@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vinyl-sourcemaps-apply/-/vinyl-sourcemaps-apply-0.2.1.tgz#ab6549d61d172c2b1b87be5c508d239c8ef87705"
+  integrity sha1-q2VJ1h0XLCsbh75cUI0jnI74dwU=
+  dependencies:
+    source-map "^0.5.1"
+
+vinyl@^2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/vinyl/-/vinyl-2.2.1.tgz#23cfb8bbab5ece3803aa2c0a1eb28af7cbba1974"
+  integrity sha512-LII3bXRFBZLlezoG5FfZVcXflZgWP/4dCwKtxd5ky9+LOtM4CS3bIRQsmR1KMnMW07jpE8fqR2lcxPZ+8sJIcw==
+  dependencies:
+    clone "^2.1.1"
+    clone-buffer "^1.0.0"
+    clone-stats "^1.0.0"
+    cloneable-readable "^1.0.0"
+    remove-trailing-separator "^1.0.1"
+    replace-ext "^1.0.0"
 
 vm-browserify@^1.0.1:
   version "1.1.0"
